@@ -1,44 +1,170 @@
 [
   {
-    "shortcut": "Ctrl + C / Cmd + C",
-    "action": "Copy selected text",
+    "shortcut": "Win + Print Screen",
+    "action": "Take a screenshot of all visible screens",
+    "app": "System",
+    "os": "Windows",
+    "submittedBy": "Jasmine"
+  },
+  {
+    "shortcut": "Ctrl + V",
+    "action": "Paste",
     "app": "General",
     "os": "Cross-platform",
-    "submittedBy": "Student A"
+    "submittedBy": "Carina"
   },
   {
-    "shortcut": "Ctrl + Shift + T / Cmd + Shift + T",
-    "action": "Reopen last closed tab",
-    "app": "Browser",
+    "shortcut": "Ctrl + C",
+    "action": "Copy",
+    "app": "General",
     "os": "Cross-platform",
-    "submittedBy": "Student B"
+    "submittedBy": "Anthony"
   },
   {
-    "shortcut": "Ctrl + P / Cmd + P",
-    "action": "Open quick file search",
+    "shortcut": "Ctrl + Z",
+    "action": "Undo",
+    "app": "General",
+    "os": "Cross-platform",
+    "submittedBy": "AJ"
+  },
+  {
+    "shortcut": "Ctrl + Shift + Esc",
+    "action": "Open Task Manager",
+    "app": "System",
+    "os": "Windows",
+    "submittedBy": "Brody"
+  },
+  {
+    "shortcut": "Shift + Alt + F",
+    "action": "Format document",
+    "app": "VS Code",
+    "os": "Windows",
+    "submittedBy": "Hassan"
+  },
+  {
+    "shortcut": "Shift + Option + F",
+    "action": "Format document",
+    "app": "VS Code",
+    "os": "macOS",
+    "submittedBy": "Hassan"
+  },
+  {
+    "shortcut": "Ctrl + Alt + Delete",
+    "action": "Open sign out/security menu",
+    "app": "System",
+    "os": "Windows",
+    "submittedBy": "Sean C"
+  },
+  {
+    "shortcut": "Ctrl + Shift + K",
+    "action": "Delete line",
     "app": "VS Code",
     "os": "Cross-platform",
-    "submittedBy": "Student C"
+    "submittedBy": "Garret"
+  },
+  {
+    "shortcut": "Ctrl + H",
+    "action": "Replace in document",
+    "app": "General",
+    "os": "Cross-platform",
+    "submittedBy": "Christian"
+  },
+  {
+    "shortcut": "Ctrl + T",
+    "action": "Open new tab",
+    "app": "Browser",
+    "os": "Cross-platform",
+    "submittedBy": "Bella"
   },
   {
     "shortcut": "Alt + Tab",
-    "action": "Switch windows",
+    "action": "Switch between open apps",
     "app": "System",
     "os": "Windows",
-    "submittedBy": "Student D"
+    "submittedBy": "Tylan"
   },
   {
-    "shortcut": "Cmd + Space",
-    "action": "Open Spotlight search",
+    "shortcut": "Alt + F4",
+    "action": "Close current window",
+    "app": "System",
+    "os": "Windows",
+    "submittedBy": "Nang"
+  },
+  {
+    "shortcut": "Ctrl + A",
+    "action": "Select all",
+    "app": "General",
+    "os": "Cross-platform",
+    "submittedBy": "AJ"
+  },
+  {
+    "shortcut": "Win + Shift + S",
+    "action": "Open screenshot tool",
+    "app": "System",
+    "os": "Windows",
+    "submittedBy": "Maddox"
+  },
+  {
+    "shortcut": "Cmd + Shift + 4",
+    "action": "Take a screenshot selection",
     "app": "System",
     "os": "macOS",
-    "submittedBy": "Student E"
+    "submittedBy": "Maddox"
   },
   {
-    "shortcut": "Ctrl + Alt + T",
-    "action": "Open terminal",
+    "shortcut": "Ctrl + Tab",
+    "action": "Switch tabs forward",
+    "app": "Browser",
+    "os": "Windows",
+    "submittedBy": "Mitchell"
+  },
+  {
+    "shortcut": "Ctrl + Shift + Tab",
+    "action": "Switch tabs backward",
+    "app": "Browser",
+    "os": "Windows",
+    "submittedBy": "Mitchell"
+  },
+  {
+    "shortcut": "Cmd + Option + Right Arrow",
+    "action": "Switch tabs forward",
+    "app": "Browser",
+    "os": "macOS",
+    "submittedBy": "Mitchell"
+  },
+  {
+    "shortcut": "Cmd + Option + Left Arrow",
+    "action": "Switch tabs backward",
+    "app": "Browser",
+    "os": "macOS",
+    "submittedBy": "Mitchell"
+  },
+  {
+    "shortcut": "Win + .",
+    "action": "Open emoji/special characters panel",
     "app": "System",
-    "os": "Linux",
-    "submittedBy": "Student F"
+    "os": "Windows",
+    "submittedBy": "Reid"
+  },
+  {
+    "shortcut": "Ctrl + Command + Space",
+    "action": "Open emoji/special characters panel",
+    "app": "System",
+    "os": "macOS",
+    "submittedBy": "Reid"
+  },
+  {
+    "shortcut": "Alt + Shift + S, then R",
+    "action": "Generate getters and setters",
+    "app": "Eclipse",
+    "os": "Windows/Linux",
+    "submittedBy": "Eric"
+  },
+  {
+    "shortcut": "Cmd + Option + S, then R",
+    "action": "Generate getters and setters",
+    "app": "Eclipse",
+    "os": "macOS",
+    "submittedBy": "Eric"
   }
 ]
