@@ -54,7 +54,7 @@ function populateAppOptions(items) {
 
 async function init() {
   try {
-    const response = await fetch('./shortcuts.json');
+    const response = await fetch('./data/shortcuts.json');
 
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
