@@ -1,0 +1,80 @@
+:root {
+  color-scheme: light dark;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: Canvas;
+  color: CanvasText;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  opacity: 0.85;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+input,
+select {
+  font: inherit;
+  padding: 0.5rem 0.6rem;
+}
+
+.result-count {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.results li {
+  border: 1px solid color-mix(in oklab, CanvasText 18%, Canvas);
+  border-radius: 10px;
+  padding: 0.75rem;
+}
+
+.shortcut {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-weight: 700;
+}
+
+.meta {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.team {
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid color-mix(in oklab, CanvasText 20%, Canvas);
+}

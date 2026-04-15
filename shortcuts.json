@@ -1,0 +1,44 @@
+[
+  {
+    "shortcut": "Ctrl + C / Cmd + C",
+    "action": "Copy selected text",
+    "app": "General",
+    "os": "Cross-platform",
+    "submittedBy": "Student A"
+  },
+  {
+    "shortcut": "Ctrl + Shift + T / Cmd + Shift + T",
+    "action": "Reopen last closed tab",
+    "app": "Browser",
+    "os": "Cross-platform",
+    "submittedBy": "Student B"
+  },
+  {
+    "shortcut": "Ctrl + P / Cmd + P",
+    "action": "Open quick file search",
+    "app": "VS Code",
+    "os": "Cross-platform",
+    "submittedBy": "Student C"
+  },
+  {
+    "shortcut": "Alt + Tab",
+    "action": "Switch windows",
+    "app": "System",
+    "os": "Windows",
+    "submittedBy": "Student D"
+  },
+  {
+    "shortcut": "Cmd + Space",
+    "action": "Open Spotlight search",
+    "app": "System",
+    "os": "macOS",
+    "submittedBy": "Student E"
+  },
+  {
+    "shortcut": "Ctrl + Alt + T",
+    "action": "Open terminal",
+    "app": "System",
+    "os": "Linux",
+    "submittedBy": "Student F"
+  }
+]

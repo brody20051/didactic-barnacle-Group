@@ -1,1 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shortcut Finder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Class Shortcut Finder</h1>
+      <p class="subtitle">
+        Search and filter keyboard shortcuts collected by the class.
+      </p>
 
+      <section class="controls" aria-label="Search and filter controls">
+        <label>
+          Search
+          <input id="searchInput" type="text" placeholder="Try: copy, browser, VS Code" />
+        </label>
+
+        <label>
+          App / Tool
+          <select id="appFilter">
+            <option value="all">All apps/tools</option>
+          </select>
+        </label>
+
+        <label>
+          OS
+          <select id="osFilter">
+            <option value="all">All OS</option>
+            <option value="Windows">Windows</option>
+            <option value="macOS">macOS</option>
+            <option value="Linux">Linux</option>
+            <option value="Cross-platform">Cross-platform</option>
+          </select>
+        </label>
+      </section>
+
+      <section>
+        <p id="resultCount" class="result-count"></p>
+        <ul id="results" class="results"></ul>
+      </section>
+
+      <section class="team">
+        <h2>Team Members</h2>
+        <ul>
+          <li>Hassan</li>
+          <li>Brody </li>
+          <li>Sean </li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
