@@ -19,7 +19,7 @@ function render(items) {
         <div>${item.action}</div>
         <div class="meta">${item.app} • ${item.os} • Submitted by ${item.submittedBy}</div>
       </li>
-    `,
+    `
     )
     .join('');
 }
@@ -30,18 +30,22 @@ function applyFilters() {
   const selectedOs = osFilter.value;
 
   const filtered = shortcuts.filter((item) => {
-    const searchable = `${item.shortcut} ${item.action} ${item.app} ${item.os} ${item.submittedBy}`.toLowerCase();
-    const matchesSearch = !search || searchable.includes(search);
-    const matchesApp = selectedApp === 'all' || item.app === selectedApp;
-    const matchesOs = selectedOs === 'all' || item.os === selectedOs;
+    const searchable =
+      `${item.shortcut} ${item.action} ${item.app} ${item.os} ${item.submittedBy}`.toLowerCase();
 
-    return matchesSearch && matchesApp && matchesOs;
+    return (
+      (!search || searchable.includes(search)) &&
+      (selectedApp === 'all' || item.app === selectedApp) &&
+      (selectedOs === 'all' || item.os === selectedOs)
+    );
   });
 
   render(filtered);
 }
 
 function populateAppOptions(items) {
+  appFilter.innerHTML = `<option value="all">All apps/tools</option>`;
+
   const uniqueApps = [...new Set(items.map((item) => item.app))].sort();
 
   uniqueApps.forEach((appName) => {
@@ -54,6 +58,7 @@ function populateAppOptions(items) {
 
 async function init() {
   try {
+    // ✅ FIXED PATH (THIS WAS THE FINAL ISSUE BEFORE)
     const response = await fetch('./data/shortcuts.json');
 
     if (!response.ok) {
@@ -65,7 +70,8 @@ async function init() {
     populateAppOptions(shortcuts);
     applyFilters();
   } catch (error) {
-    resultCount.textContent = 'Failed to load shortcut data. Check shortcuts.json path.';
+    console.error(error);
+    resultCount.textContent = 'Failed to load shortcut data.';
     results.innerHTML = `<li>${error.message}</li>`;
   }
 }
