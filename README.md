@@ -11,9 +11,9 @@ A lightweight app to help classmates search and filter keyboard shortcuts.
 
 ## Team Members
 
-- Member 1
-- Member 2
-- Member 3
+- Hassan
+- Brody
+- Sean
 
 ## Run Locally
 
