@@ -1,12 +1,21 @@
 :root {
   color-scheme: light dark;
   font-family: Inter, system-ui, Arial, sans-serif;
+
+  /* Theme colors */
+  --blue: #1e3a8a;
+  --blue-light: #3b82f6;
+  --gold: #fbbf24;
+  --gold-soft: #fde68a;
+  --bg: #0b1a3a;
+  --card: #12245c;
+  --text: #f8fafc;
 }
 
 body {
   margin: 0;
-  background: Canvas;
-  color: CanvasText;
+  background: var(--bg);
+  color: var(--text);
 }
 
 .container {
@@ -17,11 +26,13 @@ body {
 
 h1 {
   margin-bottom: 0.25rem;
+  color: var(--gold);
 }
 
 .subtitle {
   margin-top: 0;
   opacity: 0.85;
+  color: var(--gold-soft);
 }
 
 .controls {
@@ -36,12 +47,24 @@ label {
   flex-direction: column;
   gap: 0.4rem;
   font-weight: 600;
+  color: var(--gold);
 }
 
 input,
 select {
   font: inherit;
   padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--blue-light);
+  background: #0f1f4b;
+  color: var(--text);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: var(--gold);
+  box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.3);
 }
 
 .result-count {
@@ -58,23 +81,26 @@ select {
 }
 
 .results li {
-  border: 1px solid color-mix(in oklab, CanvasText 18%, Canvas);
+  border: 1px solid var(--blue-light);
   border-radius: 10px;
   padding: 0.75rem;
+  background: var(--card);
 }
 
 .shortcut {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   font-weight: 700;
+  color: var(--gold);
 }
 
 .meta {
   font-size: 0.9rem;
   opacity: 0.8;
+  color: #cbd5f5;
 }
 
 .team {
   margin-top: 2rem;
   padding-top: 1.2rem;
-  border-top: 1px solid color-mix(in oklab, CanvasText 20%, Canvas);
+  border-top: 1px solid var(--blue-light);
 }
